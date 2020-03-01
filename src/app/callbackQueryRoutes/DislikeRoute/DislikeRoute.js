@@ -1,0 +1,25 @@
+const Route = require('../../../infrastructure/Route');
+const CallbackQueryDataSaverMiddleware = require('../../middlewares/CallbackQueryDataSaverMiddleware');
+const VoteDownHandler = require('./DislikeHandler');
+
+class DislikeRoute extends Route {
+  static get middlewareClsList() {
+    return [
+      CallbackQueryDataSaverMiddleware,
+    ];
+  }
+
+  static get HandlerCls() {
+    return VoteDownHandler;
+  }
+
+  isMatching(callbackQuery) { // eslint-disable-line
+    if (!callbackQuery.data) {
+      return false;
+    }
+
+    return callbackQuery.data.command === 'dislike';
+  }
+}
+
+module.exports = DislikeRoute;
