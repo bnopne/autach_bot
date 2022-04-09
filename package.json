@@ -16,7 +16,7 @@
     "express": "^4.16.4",
     "lodash": "^4.17.15",
     "minimist": "^1.2.0",
-    "moment": "^2.22.2",
+    "moment": "^2.29.2",
     "node-fetch": "^2.3.0",
     "node-telegram-bot-api": "^0.30.0",
     "pg": "^8.7.3",
