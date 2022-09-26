@@ -9,7 +9,7 @@
     "url": "https://github.com/bnopne/autach_bot"
   },
   "dependencies": {
-    "@pm2/io": "^4.3.3",
+    "@pm2/io": "^5.0.0",
     "convict": "^4.3.2",
     "dotenv": "^8.2.0",
     "dropbox": "^4.0.13",
