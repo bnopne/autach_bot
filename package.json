@@ -39,5 +39,8 @@
     "create-migration": "node ./cli.js create-migration",
     "apply-migrations": "node ./cli.js apply-migrations",
     "test": "jest --verbose"
+  },
+  "volta": {
+    "node": "14.18.1"
   }
 }
