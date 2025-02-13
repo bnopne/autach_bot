@@ -1,6 +1,10 @@
 {
-  "extends": ["airbnb-base", "plugin:jest/all"],
+  "extends": [
+    "airbnb-base",
+    "plugin:jest/all"
+  ],
   "rules": {
-    "no-console": 0
+    "no-console": 0,
+    "linebreak-style": "off"
   }
 }
