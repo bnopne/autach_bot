@@ -13,7 +13,6 @@ const DislikeRoute = require('./callbackQueryRoutes/DislikeRoute/DislikeRoute');
 
 // services
 const UserAssistanceService = require('./services/UserAssistanceService');
-const MetricsService = require('./services/MetricsService');
 
 class AutachBotApp extends Application {
   static get messageRoutes() {
@@ -36,7 +35,6 @@ class AutachBotApp extends Application {
   static get services() {
     return [
       UserAssistanceService,
-      MetricsService,
     ];
   }
 }
